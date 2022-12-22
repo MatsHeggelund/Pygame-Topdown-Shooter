@@ -10,7 +10,7 @@ class Player(object):
         self.speed = 1
         self.image = pygame.Surface((self.width, self.height), pygame.SRCALPHA, 32)
         self.direction = 1
-        self.attackSpeed = 1/100 # 1 / projectiles per second
+        self.attackSpeed = 1/3 # 1 / projectiles per second
 
     def draw(self, sheet):
         self.image.blit(sheet, (0,0), (6*tilesize, 15*tilesize, self.width, self.height))
