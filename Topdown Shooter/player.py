@@ -11,8 +11,6 @@ class Player(object):
         self.image = pygame.Surface((self.width, self.height), pygame.SRCALPHA, 32)
         self.direction = 1
         self.attackSpeed = 1/100 # 1 / projectiles per second
-        self.x_map = math.floor(self.rect.x/tilesize)*tilesize
-        self.y_map = math.floor(self.rect.y/tilesize)*tilesize
 
     def draw(self, sheet):
         self.image.blit(sheet, (0,0), (6*tilesize, 15*tilesize, self.width, self.height))
@@ -33,9 +31,6 @@ class Player(object):
     def collisionDetection(self, walls, dx, dy):
         self.rect.x += dx
         self.rect.y += dy
-
-        self.x_map = math.floor(self.rect.x/tilesize)*tilesize
-        self.y_map = math.floor(self.rect.y/tilesize)*tilesize
 
         for wall in walls:
             if self.rect.colliderect(wall.rect):
