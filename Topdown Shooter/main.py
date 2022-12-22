@@ -62,11 +62,11 @@ def getCursorClick():
         if click[0] == 1:
             Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, 0)
             #Triple shot
-            Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, 5)
-            Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, -5)
-            
-            Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, 3)
-            Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, -3)
+            #Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, 5)
+            #Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, -5)
+            #Quintuple shot
+            #Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, 3)
+            #Projectile(weapon.rect.x, weapon.rect.y, mx/zoomSize, my/zoomSize, -3)
  
             cursor_boolswitch = False
             cursor_clock = time.time()
